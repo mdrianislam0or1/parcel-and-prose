@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This project is an e-commerce application built using Next.js and MongoDB. It allows users to browse products, add them to a shopping cart, and place orders. Additionally, it includes an admin dashboard for order management.
+Features Implemented
+Frontend Development
 
-## Getting Started
+    Responsive Design: The home page is fully responsive and works seamlessly on both desktop and mobile devices. CSS media queries were used to ensure responsiveness.
+    Product Display: A list of products with images, names, descriptions, and prices is displayed on the home page, mirroring the original design.
+    Shopping Cart: Users can add products to a shopping cart, and the cart displays selected products, quantities, and the total price.
 
-First, run the development server:
+Backend Development
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+    RESTful API: Next.js API routes were used to create endpoints for managing orders. CRUD operations for orders (create, read, update, delete) were implemented.
+    Database Integration: MongoDB was used to store order data. Data validation and proper schema design for orders were ensured.
+    Order Placement: Functionality for users to place an order was implemented, and order details are saved in the MongoDB database.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Admin Dashboard
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+    Order Management: A basic admin dashboard was created to view placed orders. It displays a list of orders with details such as order ID, product names, quantities, total price, and order status. Functionality to update and delete orders was also implemented.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Deployment
 
-## Learn More
+    Application Deployment: The Next.js application (both front-end and back-end) was deployed to Vercel. The application is publicly accessible at link_to_deployed_site.
 
-To learn more about Next.js, take a look at the following resources:
+How to Run Locally
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To run the application locally, follow these steps:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    Clone this repository.
+    Install dependencies by running npm install.
+    Set up environment variables for MongoDB connection.
+    Run the development server with npm run dev.
+    Access the application in your browser at https://parcel-and-prose.vercel.app.
